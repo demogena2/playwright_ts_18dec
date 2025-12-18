@@ -32,5 +32,7 @@ test('has title', async ({ page }) => {
 
   await expect(page).toHaveURL(/app/)
 
+  await page.screenshot({ path: 'example.png' });
+
 });
 
